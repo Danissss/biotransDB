@@ -41,18 +41,18 @@ def combine_via_chemsimilarity(file_name):
 	# later need automatically store into file 
 	for cl in CHEMBL:
 		for db in DRUGBANK:
-			print("CHEMBL________________")
-			print(cl)
-			print("DRUGBANK________________")
-			print(db)
+			# print("CHEMBL________________")
+			# print(cl)
+			# print("DRUGBANK________________")
+			# print(db)
 			mol_object_c = Chem.MolFromSmiles(cl)
 			mol_object_d = Chem.MolFromSmiles(db)
 
 			fps_c = FingerprintMols.FingerprintMol(mol_object_c)
 			fps_d = FingerprintMols.FingerprintMol(mol_object_d)
 			similiarty  = DataStructs.FingerprintSimilarity(fps_c,fps_d)
-			print(similiarty)
-			print("end======================")
+			# print(similiarty)
+			# print("end======================")
 
 			if similiarty == 1:
 				db_list = list(db)
@@ -63,8 +63,8 @@ def combine_via_chemsimilarity(file_name):
 			# 	# print(cl,db)
 			# else:
 			# 	continue
-			sys.exit(0)
-	print("remaining compound from drugbank is: "+len(DRUGBANK))
+			# sys.exit(0)
+	print("remaining compound from drugbank is: "+str(len(DRUGBANK)))
 	for i in ChEMBL_csvreader:
 		csv_writer_checked.writerow(i)
 	for i in drugbank_csvreader:
@@ -72,11 +72,11 @@ def combine_via_chemsimilarity(file_name):
 		# if the similes in remaining compound, then added
 		if i_similes in DRUGBANK:
 			csv_writer_checked.writerow(i)
-		else
+		else:
 			continue
 
-	csv_writer_checked.close()
-	csv_writer.close()
+	csv_write_file.close()
+	checked_file.close()
 	print("similarity check done ...")
 	return Unique_compound
 
