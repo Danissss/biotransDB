@@ -14,17 +14,25 @@
 
 # local file import 
 import learner
+import generate_mol_descriptor
 import sys
 
 
 
 def main():
 
-	# define the object; sys.argv[1] is the absolute_path 
-	new_learner = learner(sys.argv[1])
-	new_learner.get_training_data()
-	new_learner.learn_all()
-	new_learner.brutal_force_("SVC") # grid search the hyperparameter for SVC model
+	## define the object; sys.argv[1] is the absolute_path 
+	# new_learner = learner(sys.argv[1])
+	# new_learner.get_training_data()
+	# new_learner.learn_all()
+	# new_learner.brutal_force_("SVC") # grid search the hyperparameter for SVC model
+
+
+	## generate molecular descriptors from csv file
+	## csv file: row[0]:name row[1]:smiles string
+
+	sample_file = "/Users/xuan/Desktop/biotransDB/Xuan_ml_package/Xuan_learner/Sample_data.csv"
+	
 	
 	print("___________Done@")
 
