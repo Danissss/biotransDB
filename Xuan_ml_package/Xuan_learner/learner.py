@@ -13,8 +13,8 @@
 #################################################################################
 
 import data
-from train import _train_
-from train import _brutal_
+from train import train
+from train import brutal
 import multiprocessing
 import pickle 
 from concurrent.futures import ProcessPoolExecutor
@@ -39,24 +39,28 @@ class learner:
 		self.worker_n = multiprocessing.cpu_count()
 
 
-	def get_training_data(self,absolute_path):
-		path_as_list = absolute_path.split(".")
+	def get_training_data(self):
+		path_as_list = self.absolute_path.split(".")
 		length_path_as_list = len(path_as_list)
 		file_type = path_as_list[length_path_as_list-1]
-		self.training_X,self.training_y = load_data.load_data(absolute_path,file_type,training_data=True)
+		self.training_X,self.training_y = data.load_data(self.absolute_path,file_type,training_data=True)
+		# print(self.training_X)
+		# print(self.training_y)
+		return self.training_X, self.training_y
+
 
 	def get_external_testing_data(self,absolute_path):
 		path_as_list = absolute_path.split(".")
 		length_path_as_list = len(path_as_list)
 		file_type = path_as_list[length_path_as_list-1]
-		self.external_testing_X,self.external_testing_y = load_data.load_data(absolute_path,file_type,training_data=True)
+		self.external_testing_X,self.external_testing_y = data.load_data(absolute_path,file_type,training_data=True)
 
 
 	def undersampling(self):
-
+		return None
 
 	def oversampling(self):
-
+		return None
 
 	def learn_all(self):
 		'''
@@ -76,12 +80,12 @@ class learner:
 		Using brutal force to find the best parameter for selected models
 		
 		'''
-		model_directory = _train_(self.training_X,self.training_y,
+		model_directory = train(self.training_X,self.training_y,
 					self.external_testing_X,self.external_testing_y,
 					algorithm=algorithms,classes=2)
 		model = pickle.loads(model_directory)
 		# return and print the best parameter 
-		_brutal_.(self.training_X,self.training_y,model,algorithms)
+		brutal(self.training_X,self.training_y,model,algorithms)
 
 		return None
 	

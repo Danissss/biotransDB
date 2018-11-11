@@ -32,7 +32,7 @@ import pickle
 import datetime
 import os
 
-def _train_(X,y,external_X,external_y,algorithm,classes):
+def train(X,y,external_X,external_y,algorithm,classes):
 	"""
 	train:
 		train every possible popular machine learning algorithm with given data
@@ -99,8 +99,7 @@ def _train_(X,y,external_X,external_y,algorithm,classes):
 	if external_X != None and external_y != None:
 		external_test_score = model.score(external_X,external_y)
 		score_result.append("score for external test data ="+str(external_test_score)+"; ")
-	else:
-		continue
+
 
 
 	print(algorithm+"result: "+str(score_result))
@@ -108,7 +107,7 @@ def _train_(X,y,external_X,external_y,algorithm,classes):
 	return model_directory
 
 
-def _brutal_(X,y,model,algorithm):
+def brutal(X,y,model,algorithm):
 	'''
 	This function will try the scklearn grid search (brutal force)
 	to find the best parameters
@@ -125,7 +124,7 @@ def _brutal_(X,y,model,algorithm):
 	'''
 	
 	# use a full grid over all parameters
-	if algorithm == "RandomForestClassifier"
+	if algorithm == "RandomForestClassifier":
 		param_grid = {"max_depth": [3, None],
 			"max_features": [1, 3, 10],
 			"min_samples_split": [2, 3, 10],
