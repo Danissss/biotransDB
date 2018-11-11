@@ -27,20 +27,30 @@ def combined_new_dataset(file_name):
 	Original = []
 	# append instance from final_.csv
 	for row in final_csvreader:
-		Original.append(row[1])
-
+		Original.append(row)
+	final_csv.close()
+	# ignore drugbank and chembl two backbone database
+	drugbank = "DRUGBANK"
+	CHEMBL   = "CHEMBL"
+	for i in file_name:
+		if drugbank in i.upper() || ChEMBL in i.upper()
+			file_name.remove(i)
+		
 
 	# check for other dataset:
+	# later for speeding up: store the Chem.MolFromSmiles and fingerprint in dictionary as key: iteration; value: fingerprint obj
+	# due to lack of evidence, combined dataset needs to be manually curated;
+	# with standard and advanced ml procedure, it should be easy to process the data
 	for file in file_name:
-		ab_csv = open(file, newline='')
+		ab_csv = open(file,'r',newline='')
 		ab_csvreader = csv.reader(ab_csv, delimiter=',')
 		tmp_list   = []
 		for row in ab_csvreader:
-			tmp_list.append(row[1])						# assume the smiles string is in row[1]
+			tmp_list.append(row)						# assume the smiles string is in row[1]
 		for cl in Original:
 			for db in tmp_list:
-				mol_object_c = Chem.MolFromSmiles(cl)
-				mol_object_d = Chem.MolFromSmiles(db)
+				mol_object_c = Chem.MolFromSmiles(cl[1])
+				mol_object_d = Chem.MolFromSmiles(db[1])
 
 				fps_c = FingerprintMols.FingerprintMol(mol_object_c)
 				fps_d = FingerprintMols.FingerprintMol(mol_object_d)
@@ -60,27 +70,30 @@ def combined_new_dataset(file_name):
 
 	# write to new file 
 	# remove the original similes from Original list 
-	for i in final_csvreader:
+	# for i in final_csvreader:
+	# 	csv_writer_checked.writerow(i)
+	# 	i_similes = i[1]
+
+	# 	Original.remove(i_similes)
+	for i in Original:
 		csv_writer_checked.writerow(i)
-		i_similes = i[1]
-
-		Original.remove(i_similes)
-
-	for file in file_name:
-		ab_csv = open(file, newline='')
-		ab_csvreader = csv.reader(ab_csv, delimiter=',')
-		for row in ab_csvreader:
-			row_similes = row[1]
-			if row_similes in Original:
-				csv_writer_checked.writerow(row)
-				Original.remove(row_similes)
-			else:
-				continue
-		ab_csv.close()
-
-	csv_write_file.close()
 	checked_file.close()
-	final_csv.close()
+
+	# for file in file_name:
+	# 	ab_csv = open(file, newline='')
+	# 	ab_csvreader = csv.reader(ab_csv, delimiter=',')
+	# 	for row in ab_csvreader:
+	# 		row_similes = row[1]
+	# 		if row_similes in Original:
+	# 			csv_writer_checked.writerow(row)
+	# 			Original.remove(row_similes)
+	# 		else:
+	# 			continue
+	# 	ab_csv.close()
+
+	# csv_write_file.close()
+	# checked_file.close()
+	# final_csv.close()
 
 
 
@@ -89,8 +102,7 @@ def combined_new_dataset(file_name):
 
 # this function combine drugbank and chembl dataset
 def combine_via_chemsimilarity(drugbank_file,chembl_file):
-	csv_write_file = open("Pairs.csv","w",newline='')
-	csv_writer = csv.writer(csv_write_file,quoting=csv.QUOTE_ALL)
+
 	checked_file = open("final_.csv","w",newline='')
 	csv_writer_checked = csv.writer(checked_file,quoting=csv.QUOTE_ALL)
 
@@ -101,46 +113,40 @@ def combine_via_chemsimilarity(drugbank_file,chembl_file):
 	ChEMBL_csv = open(chembl_file, newline='')
 	ChEMBL_csvreader = csv.reader(ChEMBL_csv, delimiter=',')
 
-
 	DRUGBANK = []
 	for row in drugbank_csvreader:
-		DRUGBANK.append(row[1])
+		DRUGBANK.append(row)
 	CHEMBL   = []
 	for row in ChEMBL_csvreader:
-		CHEMBL.append(row[1])
-
+		CHEMBL.append(row)
 	# if selecting drugbank compound exist in chembl;
 	# print it/ save it to file
 	# later need automatically store into file 
 	for cl in CHEMBL:
 		for db in DRUGBANK:
-			mol_object_c = Chem.MolFromSmiles(cl)
-			mol_object_d = Chem.MolFromSmiles(db)
+			mol_object_c = Chem.MolFromSmiles(cl[1])
+			mol_object_d = Chem.MolFromSmiles(db[1])
 
 			fps_c = FingerprintMols.FingerprintMol(mol_object_c)
 			fps_d = FingerprintMols.FingerprintMol(mol_object_d)
 			similiarty  = DataStructs.FingerprintSimilarity(fps_c,fps_d)
 			if similiarty == 1:
-				db_list = list(db)
-				csv_writer.writerow(db_list)
+				# db_list = list(db)
+				# csv_writer.writerow(db_list)
 				DRUGBANK.remove(db)
 
 
 	print("remaining compound from drugbank is: "+str(len(DRUGBANK)))
-	for i in ChEMBL_csvreader:
+	for i in CHEMBL:
 		csv_writer_checked.writerow(i)
-	for i in drugbank_csvreader:
-		i_similes = i[1]
-		# if the similes in remaining compound, then added
-		if i_similes in DRUGBANK:
-			csv_writer_checked.writerow(i)
-		else:
-			continue
+	for i in DRUGBANK:
+		csv_writer_checked.writerow(i)
 
-	csv_write_file.close()
+
+	# csv_write_file.close()
 	checked_file.close()
 	print("similarity check done ...")
-	return Unique_compound
+	return None
 
 
 
@@ -211,7 +217,7 @@ def main():
 	# combine(file_list)
 	drubg_bank = "MDR1_drugbank.csv"
 	chembl 	   = "MDR1ChEMBL.csv"
-	combine_via_chemsimilarity(drubg_bank,chembl)
+	# combine_via_chemsimilarity(drubg_bank,chembl)
 	combined_new_dataset(file_list)
 
 
