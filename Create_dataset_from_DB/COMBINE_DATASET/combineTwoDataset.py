@@ -36,7 +36,7 @@ def combined_new_dataset(file_name):
 		ab_csvreader = csv.reader(ab_csv, delimiter=',')
 		tmp_list   = []
 		for row in ab_csvreader:
-			tmp_list.append(row[1])
+			tmp_list.append(row[1])						# assume the smiles string is in row[1]
 		for cl in Original:
 			for db in tmp_list:
 				mol_object_c = Chem.MolFromSmiles(cl)
@@ -88,7 +88,7 @@ def combined_new_dataset(file_name):
 
 
 # this function combine drugbank and chembl dataset
-def combine_via_chemsimilarity():
+def combine_via_chemsimilarity(drugbank_file,chembl_file):
 	csv_write_file = open("Pairs.csv","w",newline='')
 	csv_writer = csv.writer(csv_write_file,quoting=csv.QUOTE_ALL)
 	checked_file = open("final_.csv","w",newline='')
@@ -96,9 +96,9 @@ def combine_via_chemsimilarity():
 
 	# currently only support Drugbank data and ChEMBL data
 	# later could add self-annotating data 
-	drugbank_csv = open("Extracted_Multidrug resistance protein 1.csv", newline='')
+	drugbank_csv = open(drugbank_file, newline='')
 	drugbank_csvreader = csv.reader(drugbank_csv, delimiter=',')
-	ChEMBL_csv = open("MDR1ChEMBL.txt_substrate_v_inhibitor.csv", newline='')
+	ChEMBL_csv = open(chembl_file, newline='')
 	ChEMBL_csvreader = csv.reader(ChEMBL_csv, delimiter=',')
 
 
@@ -209,7 +209,9 @@ def main():
 	# print(file_list)  # print correct csv file name 
 	# sys.exit(0)
 	# combine(file_list)
-	combine_via_chemsimilarity()
+	drubg_bank = "MDR1_drugbank.csv"
+	chembl 	   = "MDR1ChEMBL.csv"
+	combine_via_chemsimilarity(drubg_bank,chembl)
 	combined_new_dataset(file_list)
 
 
