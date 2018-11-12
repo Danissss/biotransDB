@@ -25,14 +25,12 @@ def main():
 	sample_file = "/Users/xuan/Desktop/biotransDB/Xuan_ml_package/Xuan_learner/TrainingDataMF.csv"
 	new_learner = learner.learner(sample_file)
 	training_X, training_y = new_learner.get_training_data()  # TESTED:PASS
-	new_learner.learn_all()
-	sys.exit(0)
+	# new_learner.learn_all()
 	new_learner.brutal_force_("SVC") # grid search the hyperparameter for SVC model
 
 
 	## generate molecular descriptors from csv file
 	## csv file: row[0]:name row[1]:smiles string	
-	
 	print("___________Done@")
 
 

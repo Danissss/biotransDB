@@ -14,6 +14,7 @@
 
 import data
 import sys
+import os
 from train import train
 from train import brutal
 import multiprocessing
@@ -31,6 +32,10 @@ class learner:
 	
 	"""
 
+	# report file 
+	
+
+	# 
 	def __init__(self,absolute_path):
 		self.training_X = None
 		self.training_y = None
@@ -64,34 +69,45 @@ class learner:
 		return None
 
 	def learn_all(self):
+		cwd = os.getcwd()
+		report_path = cwd+"/report.txt"
+		report = open(report_path,"w")
 		'''
 		Concurrent python will utilize all thread 
 		'''
+		# LinearSVC(penalty=’l2’, loss=’squared_hinge’, dual=True, tol=0.0001, C=1.0, multi_class=’ovr’, fit_intercept=True, intercept_scaling=1, class_weight=None, verbose=0, random_state=None, max_iter=1000)
 		algorithms = ["SVC","NuSVC","LinearSVC","GaussianNB",
 		"BernoulliNB","MultinomialNB","DecisionTreeClassifier",
 		"RandomForestClassifier","MLPClassifier"]
 		with ProcessPoolExecutor(max_workers=self.worker_n) as executor:
 			for ML_ in algorithms:
-				# print(self.training_y)
-				# print(self.worker_n)
 				future = executor.submit(train,self.training_X,self.training_y,
 					self.external_testing_X,self.external_testing_y,
 					algorithm=ML_,classes=2)
-				val_1 = future.result()
-				print(val_1)
+				val_1,model_path = future.result()
+				report.write(val_1)
+				report.close()
 				sys.exit(0)
+
+
+		return None
 
 	def brutal_force_(self,algorithms):
 		'''
 		Using brutal force to find the best parameter for selected models
 		
 		'''
-		model_directory = train(self.training_X,self.training_y,
+		report, model_directory = train(self.training_X,self.training_y,
 					self.external_testing_X,self.external_testing_y,
 					algorithm=algorithms,classes=2)
-		model = pickle.loads(model_directory)
-		# return and print the best parameter 
-		brutal(self.training_X,self.training_y,model,algorithms)
+		# print(model_directory)
+		# files = open(model_directory,"rb")
+		# with open("model_directory","rb") as fd:
+		# # 	print(fd)
+		# 	model = pickle.loads(files)
+		# # return and print the best parameter 
+		loaded_model = pickle.load(open(model_directory, 'rb'))
+		brutal(self.training_X,self.training_y,loaded_model,algorithms)
 
 		return None
 	
