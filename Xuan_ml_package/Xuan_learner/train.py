@@ -28,9 +28,13 @@ from sklearn import neural_network
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import RandomizedSearchCV
 
+from sklearn.externals import joblib
+
 import pickle 
+# import cPickle
 import datetime
 import os
+import sys
 
 def train(X,y,external_X,external_y,algorithm,classes):
 	"""
@@ -51,15 +55,18 @@ def train(X,y,external_X,external_y,algorithm,classes):
 		list of string that each element describe a score
 	"""
 	#
-	c_time = str(datetime.datetime.now())
+	c_time = datetime.datetime.now()
+	times  = c_time.strftime('%S_%M_%H_%m_%d_%Y')
 	cwd = os.getcwd()
-	model_name = algorithm+c_time
-	model_directory = cwd + "/" + model_name
+	model_name = algorithm+"_"+times
+	model_ = cwd + "/" + model_name+".pkl"
+	model_file = open(model_, 'wb')
+
 	#
 
 	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.8, random_state=0)
 	if algorithm == "SVC":
-		model = svm.SVC()
+		model = svm.SVC(gamma="auto")
 	elif algorithm == "NuSVC":
 		model = svm.NuSVC()
 	elif algorithm == "LinearSVC":
@@ -82,14 +89,14 @@ def train(X,y,external_X,external_y,algorithm,classes):
 	# elif algorithm == "ExtraTreesClassifier":
 	# 	model = ensemble.ExtraTreesClassifier()
 
-	model = algorithm_function()
+
 	model.fit(X,y)
 	#cv
 	cv = [5,10,15]
 	score_result = []
 	for i in cv:
 		mean_score = cross_val_score(model, X,y, cv=i).mean()
-		score_result.append("score for cv-"+str(i)+"="+str(i)+"; ")
+		score_result.append("score for cv-"+str(i)+"= "+str(mean_score)+"; ")
 
 	# test split (tp = test split) 0.8:0.2:
 	model.fit(X_train,y_train)
@@ -102,9 +109,14 @@ def train(X,y,external_X,external_y,algorithm,classes):
 
 
 
-	print(algorithm+"result: "+str(score_result))
-	pickle.dumps(model_name)
-	return model_directory
+	print(algorithm+" result: "+str(score_result))
+	pickle.dump(model, model_file) 
+	# load the model
+	# https://stackoverflow.com/questions/10592605/save-classifier-to-disk-in-scikit-learn
+	# load it again
+	# with open('my_dumped_classifier.pkl', 'rb') as fid:
+ #    	gnb_loaded = pickle.load(fid)
+	return None
 
 
 def brutal(X,y,model,algorithm):

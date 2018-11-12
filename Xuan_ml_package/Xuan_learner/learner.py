@@ -13,6 +13,7 @@
 #################################################################################
 
 import data
+import sys
 from train import train
 from train import brutal
 import multiprocessing
@@ -71,9 +72,14 @@ class learner:
 		"RandomForestClassifier","MLPClassifier"]
 		with ProcessPoolExecutor(max_workers=self.worker_n) as executor:
 			for ML_ in algorithms:
-				executor.submit(_train_,self.training_X,self.training_y,
+				# print(self.training_y)
+				# print(self.worker_n)
+				future = executor.submit(train,self.training_X,self.training_y,
 					self.external_testing_X,self.external_testing_y,
 					algorithm=ML_,classes=2)
+				val_1 = future.result()
+				print(val_1)
+				sys.exit(0)
 
 	def brutal_force_(self,algorithms):
 		'''

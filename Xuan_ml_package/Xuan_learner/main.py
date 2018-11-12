@@ -26,6 +26,7 @@ def main():
 	new_learner = learner.learner(sample_file)
 	training_X, training_y = new_learner.get_training_data()  # TESTED:PASS
 	new_learner.learn_all()
+	sys.exit(0)
 	new_learner.brutal_force_("SVC") # grid search the hyperparameter for SVC model
 
 
