@@ -3,6 +3,36 @@ import csv
 import sys
 
 
+
+
+
+def extract_all_transporter():
+	databaseFile = "test_drugbank.db"
+	conn = sqlite3.connect(databaseFile)
+	c = conn.cursor()
+
+	transporter_file = open("transporter_list_drugbank.csv","r",newline='')
+	transporter_csv = csv.reader(transporter_file,delimiter=",")
+
+	for transporter_name in transporter_csv:
+		query = "with combined_table as (select drugbank_drug.drug_id, drugbank_drug.drug_name, drugbank_drug.drug_smiles, \
+			drugbank_drug.ChEMBL_ID,drugbank_transport.drug_transport_name, actions from drugbank_drug, drugbank_transport \
+			where drugbank_drug.drug_id = drugbank_transport.drug_id and drug_smiles is not null),\
+			extract_table as (select drug_name, drug_smiles, drug_transport_name, actions, ChEMBL_ID from combined_table where drug_id \
+			in (select drug_id from combined_table)) select * from extract_table where drug_transport_name = \
+			'{0}';".format(transporter_name)
+
+		result = c.execute(query).fetchall()
+		csv_file = open("Extracted_"+transporter_name+".csv", "w",newline='')
+		csv_writer = csv.writer(csv_file,quoting=csv.QUOTE_ALL)
+		for i in result:
+			csv_writer.writerow(list(i))
+		csv_file.close()
+	print("Done!")
+	return None
+
+
+
 def main():
 	databaseFile = "test_drugbank.db"
 	conn = sqlite3.connect(databaseFile)
@@ -41,6 +71,8 @@ def main():
 
 	csv_file.close()
 
+
+	extract_all_transporter()
 
 
 

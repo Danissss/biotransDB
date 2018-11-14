@@ -29,6 +29,7 @@ def combined_new_dataset(file_name):
 	for row in final_csvreader:
 		Original.append(row)
 	final_csv.close()
+	
 	# ignore drugbank and chembl two backbone database
 	drugbank = "DRUGBANK"
 	CHEMBL   = "CHEMBL"

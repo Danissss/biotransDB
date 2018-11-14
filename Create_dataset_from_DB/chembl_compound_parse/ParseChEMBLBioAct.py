@@ -4,6 +4,7 @@ import sqlite3
 
 
 def investigate_duplicate_ChEMBLID():
+	return None
 
 
 
@@ -49,7 +50,7 @@ def ChEMBL_Data_cleanup(FileName):
 			Autocuration = row.index("CURATED_BY")
 			break
 		next(rd) # remove the header;
-		spamwriter.writerow(["CMPD_CHEMBLID","ACTIVITY_COMMENT","CANONICAL_SMILES","PUBMED_ID"])
+		# spamwriter.writerow(["CMPD_CHEMBLID","CANONICAL_SMILES","ACTIVITY_COMMENT","PUBMED_ID"])
 		
 		substrate = []
 		substrate_c_id = []
@@ -84,7 +85,7 @@ def ChEMBL_Data_cleanup(FileName):
 				# 	ChEMBLID_Tracker.append(ChEMBL_ID)
 				# else:
 				# 	continue
-				temp_list = [ChEMBL_ID,activity,smiles,reference,curation_type]
+				temp_list = [ChEMBL_ID,smiles,activity,reference]
 				# print(str(temp_list))
 				# sys.exit(0)
 				if activity != "":
