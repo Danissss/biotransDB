@@ -40,8 +40,8 @@
 # TODO
 1. combine data via chemblID and chemical similiarty remain test 
 2. List of transporters (Drugbank)
-3. List of transporters (ChEMBL)
-4. List of transporters ()
+3. List of transporters (ChEMBL) download all the transporter from ChEMBL online database
+4. List of transporters (BinidingDB)
 
 
 

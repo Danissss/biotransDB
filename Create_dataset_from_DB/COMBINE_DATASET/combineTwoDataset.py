@@ -106,7 +106,10 @@ def combine_via_chemsimilarity(drugbank_file,chembl_file):
 
 	checked_file = open("final_.csv","w",newline='')
 	csv_writer_checked = csv.writer(checked_file,quoting=csv.QUOTE_ALL)
-
+	# this file is for keep track of duplicate compounds 
+	# if drugbank state the compound is inhibitor but chembl state substrate; then it needs to investigate
+	checked_file_2 = open("duplicates.csv","w",newline='')
+	csv_writer_checked_2 = csv.writer(checked_file,quoting=csv.QUOTE_ALL)
 	# currently only support Drugbank data and ChEMBL data
 	# later could add self-annotating data 
 	drugbank_csv = open(drugbank_file, newline='')
@@ -132,11 +135,15 @@ def combine_via_chemsimilarity(drugbank_file,chembl_file):
 			fps_d = FingerprintMols.FingerprintMol(mol_object_d)
 			similiarty  = DataStructs.FingerprintSimilarity(fps_c,fps_d)
 			if similiarty == 1:
+				single_list = ["Duplicates"]
+				csv_writer_checked_2.writerow(single_list)
+				csv_writer_checked_2.writerow(cl)
+				csv_writer_checked_2.writerow(db)
 				# db_list = list(db)
 				# csv_writer.writerow(db_list)
 				DRUGBANK.remove(db)
 
-
+	checked_file_2.close()
 	print("remaining compound from drugbank is: "+str(len(DRUGBANK)))
 	for i in CHEMBL:
 		csv_writer_checked.writerow(i)
