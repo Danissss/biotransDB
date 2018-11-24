@@ -184,8 +184,8 @@ def main():
 
 	FileName = sys.argv[1]
 	ChEMBL_data = ChEMBL_Data_cleanup(FileName)
-	duplicate_file_name = FileName + "_duplicated.csv"
-	investigate_duplicate_ChEMBLID(duplicate_file_name)
+	# duplicate_file_name = FileName + "_duplicated.csv"
+	# investigate_duplicate_ChEMBLID(duplicate_file_name)
 
 	
 

@@ -2,4 +2,7 @@
 *.tsv
 *.db
 *.pdf
-
+*.txt
+*.png
+*.jar
+*.model

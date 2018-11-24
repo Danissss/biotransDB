@@ -18,7 +18,10 @@ from rdkit.Chem.Fingerprints import FingerprintMols
 
 # this function is trying to combine the new dataset
 # to ensure that there is no redundent molecules;
-def combined_new_dataset(file_name):
+def combined_new_dataset():
+	file_name = walk()
+
+	
 	checked_file = open("final_with_other_dataset.csv","w",newline='')
 	csv_writer_checked = csv.writer(checked_file,quoting=csv.QUOTE_ALL)
 
@@ -123,6 +126,7 @@ def combine_via_chemsimilarity(drugbank_file,chembl_file):
 	CHEMBL   = []
 	for row in ChEMBL_csvreader:
 		CHEMBL.append(row)
+
 	# if selecting drugbank compound exist in chembl;
 	# print it/ save it to file
 	# later need automatically store into file 
@@ -225,8 +229,9 @@ def main():
 	# combine(file_list)
 	drubg_bank = "MDR1_drugbank.csv"
 	chembl 	   = "MDR1ChEMBL.csv"
-	# combine_via_chemsimilarity(drubg_bank,chembl)
-	combined_new_dataset(file_list)
+
+	combine_via_chemsimilarity(drubg_bank,chembl) 	#  this line always execute first
+	combined_new_dataset()					#  this line always execute after combine_via_chemsimilarity
 
 
 
