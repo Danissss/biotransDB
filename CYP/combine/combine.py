@@ -41,15 +41,36 @@ from rdkit.Chem.Fingerprints import FingerprintMols
 
 
 def combine_via_chemsimilarity(cypfile,cypreact):
+	print("Start: "+ cypfile)
+	cwd = os.getcwd()
 
-	checked_file = open("final_.csv","w",newline='')
+	
+	
+	
+
+
+	cyp_name = cypfile.split("/")
+	cyp_name = cyp_name[len(cyp_name)-1]
+	cyp_name = cyp_name.split(".")[0]
+
+# create new directory:
+	newdirectory = cwd+"/"+cyp_name
+	try:
+		os.makedirs(newdirectory)
+	except:
+		print("directory exist")
+	# os.chdir("/Users/xuan/Desktop/biotransDB/Create_dataset_from_DB/chembl_compound_parse/new_dir")
+	os.chdir(newdirectory)
+
+	checked_file = open(cyp_name+"_final_.csv","w",newline='')
 	csv_writer_checked = csv.writer(checked_file,quoting=csv.QUOTE_ALL)
 	# this file is for keep track of duplicate compounds 
 	# if drugbank state the compound is inhibitor but chembl state substrate; then it needs to investigate
-	checked_file_2 = open("duplicates.csv","w",newline='')
+	checked_file_2 = open(cyp_name+"_duplicates.csv","w",newline='')
 	csv_writer_checked_2 = csv.writer(checked_file,quoting=csv.QUOTE_ALL)
 	# currently only support Drugbank data and ChEMBL data
 	# later could add self-annotating data 
+
 	drugbank_csv = open(cypfile, newline='')
 	drugbank_csvreader = csv.reader(drugbank_csv, delimiter=',')
 	ChEMBL_csv = open(cypreact, newline='')
