@@ -52,12 +52,17 @@ def check(file_name,cyp):
 			stdout_put = line.decode('ascii')
 			temp_list.append(stdout_put)
 			#print(stdout_put)
-		result = temp_list[3]
-		result = result.split(":")
-		result = result[len(result)-1]
-		result = result.replace(" ","")
-		result = result.replace("\n","")
+		try:
+			result = temp_list[3]
+			result = result.split(":")
+			result = result[len(result)-1]
+			result = result.replace(" ","")
+			result = result.replace("\n","")
+		except:
+			result = "N"
+			print("exception: " + str(row))
 		actual = row[2]
+		
 
 		if "substrate" in actual.lower() or ("active" in actual.lower() and "not" not in actual.lower()):
 
@@ -75,13 +80,14 @@ def check(file_name,cyp):
 			non_reactant = non_reactant + 1
 		else:
 			print(actual)
-		sys.exit(0)
+		
 
 	reactant_accuracy = (predicted_correct / reactant) * 100
 	non_reactant_accuracy = (non_reactant_predicted_correct / non_reactant) *100
 	rectant_inaccuracy = 100 - reactant_accuracy
 	non_reactant_inaccuracy = 100 - non_reactant_accuracy
-
+	print("non_reactant: "+non_reactant)
+	print("reactant: "+reactant)
 	print(reactant_accuracy,non_reactant_accuracy,rectant_inaccuracy,non_reactant_inaccuracy)
 	return [reactant_accuracy,non_reactant_accuracy,rectant_inaccuracy,non_reactant_inaccuracy]
 	
@@ -101,7 +107,16 @@ def main():
 		if "test" not in f:
 		# print(f)
 			if "1A2" in f:
-				check(f,"1A2")
+				# print(non_reactant) # 221
+				# print(reactant)     # 12831
+				# [reactant_accuracy,non_reactant_accuracy,rectant_inaccuracy,non_reactant_inaccuracy]
+				# 77.51539240900944 27.149321266968325 22.484607590990564 72.85067873303167 (for 1A2; Date: 2018-11-28)
+				
+				# result = check(f,"1A2")
+				result = "DONE"
+			elif "3A4" in f:
+				result = check(f,"3A4")
+
 
 
 if __name__ == '__main__':
