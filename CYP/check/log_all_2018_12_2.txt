@@ -1,0 +1,421 @@
+xuan@xuan-cao:~/Desktop/biotransDB/CYP/check$ python3 check.py 
+
+
+bioactivityCYP3A4_inactive_v_active.csvstart...
+Cytochrome P450 mechanistic inhibitor: PMID 10870985
+Cytochrome P450 mechanistic inhibitor: PMID 12920173
+Cytochrome P450 mechanistic inhibitor: PMID 9918590
+Cytochrome P450 mechanistic inhibitor: PMID 11012556
+Cytochrome P450 mechanistic inhibitor: PMID 10859150
+Cytochrome P450 mechanistic inhibitor: PMID 14744949
+Cytochrome P450 mechanistic inhibitor: PMID 11701226
+Cytochrome P450 mechanistic inhibitor: PMID 2133086
+exception: ['CHEMBL1563396', 'COc1ccc(O[C@H]2C=C[C@H](O[C@H]2COC(=O)CC\\C(=N/OC[C@@H](O)COCc3occc3)\\C)c4ccccc4)cc1', 'Active', '']
+Cytochrome P450 mechanistic inhibitor: PMID 9616191
+Cytochrome P450 mechanistic inhibitor: PMID 10860553
+Cytochrome P450 mechanistic inhibitor: PMID 15748631
+Cytochrome P450 mechanistic inhibitor: PMID 12119000
+Cytochrome P450 mechanistic inhibitor: PMID 15748631
+exception: ['CHEMBL980', 'COc1ccccc1OCC(O)CO', 'Active', '22931300']
+Cytochrome P450 mechanistic inhibitor: PMID 11124228
+exception: ['CHEMBL1561579', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCc3nc(c4ccccc4)c(cc3C2)c5ccccc5', 'Active', '']
+exception: ['CHEMBL1368111', 'C[C@H](N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'Active', '']
+exception: ['CHEMBL1326815', 'COc1cccc(c1)[C@@H]2Oc3ccc(OC)cc3\\C(=N\\OC[C@@H](O)COCc4occc4)\\[C@@H]2O', 'Active', '']
+Cytochrome P450 mechanistic inhibitor: PMID 15748631
+Cytochrome P450 mechanistic inhibitor: PMID 15155549
+Cytochrome P450 mechanistic inhibitor: PMID 8531125
+Cytochrome P450 mechanistic inhibitor: PMID 11901092
+Cytochrome P450 mechanistic inhibitor
+Cytochrome P450 mechanistic inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 12019199
+exception: ['CHEMBL1455203', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCCCc3nc(C)c(C)cc23', 'Active', '']
+exception: ['CHEMBL1529384', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCCc3nc(C)c(C)cc23', 'Active', '']
+Cytochrome P450 mechanistic inhibitor: PMID 15342469
+Cytochrome P450 mechanistic inhibitor: PMID 14570772
+Cytochrome P450 mechanistic inhibitor: PMID 14744949
+Cytochrome P450 mechanistic inhibitor: PMID 11901092
+Cytochrome P450 mechanistic inhibitor: PMID 10647906
+Cytochrome P450 mechanistic inhibitor: PMID 15523003
+Inhibitor
+exception: ['CHEMBL1596987', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'Active', '']
+exception: ['CHEMBL1551584', 'CC(C)(C)N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'Active', '']
+exception: ['CHEMBL1551571', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'Active', '']
+Cytochrome P450 mechanistic inhibitor: PMID 11038163
+exception: ['CHEMBL428880', 'OC(COc1cccc2OC(=CC(=O)c12)C(=O)O)COc3cccc4OC(=CC(=O)c34)C(=O)O', 'Active', '22931300']
+Cytochrome P450 mechanistic inhibitor: PMID 14967002
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 14744949
+Cytochrome P450 mechanistic inhibitor: PMID 10454485
+exception: ['CHEMBL146095', 'OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23', 'Active', '']
+Cytochrome P450 mechanistic inhibitor: PMID 10525281
+Cytochrome P450 mechanistic inhibitor: PMID 9107543
+Cytochrome P450 mechanistic inhibitor: PMID 11038163
+Cytochrome P450 mechanistic inhibitor: PMID 15770073
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 9107543
+Cytochrome P450 mechanistic inhibitor: PMID 7575636
+exception: ['CHEMBL1741536', 'CC(=O)OC[C@@H]1O[C@H](C\\C=N/OC[C@@H](O)COCc2occc2)C=C[C@@H]1OC(=O)C', 'inactive', '']
+exception: ['CHEMBL1606038', 'CCc1cc2CN(CC\\C(=N\\OC[C@@H](O)COCc3occc3)\\C)CCc2nc1CC', 'Not Active', '']
+exception: ['CHEMBL448741', 'CCCCCCCCCCCCCCC[C@@H](O)[C@@H](N)CO', 'Not Active', '']
+exception: ['CHEMBL1316219', 'OC[C@H](O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23', 'Not Active', '']
+exception: ['CHEMBL74', '[Na+].[Na+].OC(COc1cccc2OC(=CC(=O)c12)C(=O)[O-])COc3cccc4OC(=CC(=O)c34)C(=O)[O-]', 'inactive', '']
+exception: ['CHEMBL1515899', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'Not Active', '']
+exception: ['CHEMBL182', 'Nc1nc(O)c2ncn(COC(CO)CO)c2n1', 'inactive', '']
+exception: ['CHEMBL1606380', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'Not Active', '']
+exception: ['CHEMBL1369347', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(C4=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1612908', 'CCCCCCCCCCCCCCCCCCNC(=O)OC[C@@H](COP(=O)([O-])OCC[n+]1ccsc1)OC', 'inactive', '']
+exception: ['CHEMBL1372088', 'CO[C@H](CO)COc1ccc(OC)cc1', 'inactive', '']
+exception: ['CHEMBL1357193', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'Not Active', '']
+exception: ['CHEMBL1435288', 'COC(=O)[C@@H]1CC[C@H](C)[C@H](N1C(=O)c2ccc(\\C=N/OC[C@@H](O)COCc3occc3)cc2)c4ccc(C)cc4', 'Not Active', '']
+exception: ['CHEMBL1493851', 'C\\C(=N\\OC[C@@H](O)COCc1occc1)\\CCC(=O)OC[C@@H]2O[C@@H](C=C[C@@H]2Oc3ccc(C)cc3)C#Cc4ccccc4', 'Not Active', '']
+exception: ['CHEMBL1741472', 'Cc1ccccc1OC[C@H](O)CO', 'inactive', '']
+exception: ['CHEMBL1551418', 'COc1ccccc1OC[C@H](O)COC(=O)N', 'inactive', '']
+exception: ['CHEMBL1476892', 'C[C@H](N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'Not Active', '']
+exception: ['CHEMBL1741549', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1435837', 'CO[C@H](\\C=N/OC[C@@H](O)COCc1occc1)[C@H](C)\\C=C/CC(=O)OC', 'inactive', '']
+exception: ['CHEMBL1594107', 'CCCCC[C@H](O)\\C=C/[C@@H]1[C@H](O)C[C@H](O)[C@H]1C\\C=C/CCCC(=O)O.COC(N)(CO)CO', 'inactive', '']
+exception: ['CHEMBL1473408', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1257124', 'CCCCCCCCCCCCCCCCCCOC[C@@H](COP(=O)([O-])OCC[N+](C)(C)C)OC', 'inactive', '']
+exception: ['CHEMBL1371950', 'CN1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O', 'inactive', '']
+exception: ['CHEMBL1405913', 'CC[C@H](N1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O)c6ccccc6', 'Not Active', '']
+exception: ['CHEMBL1438689', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(Cc6cc7OCOc7cc6Cl)C4=O', 'Not Active', '']
+exception: ['CHEMBL1413388', 'COc1ccccc1OC[C@H](O)CO', 'inactive', '']
+exception: ['CHEMBL1723345', 'NC(=O)OC[C@H](O)COc1ccc(Cl)cc1', 'inactive', '']
+exception: ['CHEMBL1593190', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'Not Active', '']
+exception: ['CHEMBL1592852', 'CC(C)(C)N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'Not Active', '']
+exception: ['CHEMBL1357184', 'COC(=O)C\\C=C/[C@@H](C)[C@H](NS(=O)(=O)c1ccc(C)cc1)\\C=N/OC[C@@H](O)COCc2occc2', 'Not Active', '']
+exception: ['CHEMBL1337978', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1514070', 'OC[C@@H](O)COc1cccc2ccccc12', 'inactive', '']
+exception: ['CHEMBL1320251', 'CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1741608', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1317647', 'CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1742328', 'COc1ccc(OCC(O)COc2ccc(cc2)C(=O)O)cc1', 'inactive', '']
+exception: ['CHEMBL1487948', 'CCCCCCCCCCCCCCC[C@H](O)[C@H](N)CO', 'inactive', '']
+exception: ['CHEMBL1525349', 'CC(=NOC[C@@H](O)COCc1occc1)C', 'inactive', '']
+exception: ['CHEMBL1327505', 'CC(C)[C@@H](OCc1ccccc1)[C@H](C)\\C=N/OC[C@@H](O)COCc2occc2', 'inactive', '']
+non_reactant: 2910
+reactant: 12515
+92.08949260886936 8.934707903780069 7.910507391130636 91.06529209621993
+
+
+bioactivityCYP1A2_inactive_v_active.csvstart...
+Cytochrome P450 mechanistic inhibitor: PMID 14570767
+Cytochrome P450 mechanistic inhibitor: PMID 10775323
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 9760279
+Cytochrome P450 mechanistic inhibitor: PMID 11868802
+Cytochrome P450 mechanistic inhibitor: PMID 9107543
+Cytochrome P450 mechanistic inhibitor: PMID 9760279
+Cytochrome P450 mechanistic inhibitor: PMID 9585555
+Cytochrome P450 mechanistic inhibitor: PMID 14570767
+Inhibitor
+Inhibitor
+exception: ['CHEMBL3086675', 'OC[C@@H](O)COc1ccc2COc3cc(Nc4ccc(F)cc4F)ccc3C(=O)c2c1', 'Active', '24131218']
+Cytochrome P450 mechanistic inhibitor: PMID 9107543
+Cytochrome P450 mechanistic inhibitor: PMID 9760279
+Cytochrome P450 mechanistic inhibitor: PMID 9023313
+exception: ['CHEMBL146095', 'OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23', 'Active', '22931300']
+exception: ['CHEMBL1514070', 'OC[C@@H](O)COc1cccc2ccccc12', 'Active', '']
+Cytochrome P450 mechanistic inhibitor: PMID 9107543
+Cytochrome P450 mechanistic inhibitor: PMID 9760279
+exception: ['CHEMBL1316219', 'OC[C@H](O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23', 'Active', '']
+exception: ['CHEMBL1551571', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'inactive', '']
+exception: ['CHEMBL1593190', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'inactive', '']
+exception: ['CHEMBL1326815', 'COc1cccc(c1)[C@@H]2Oc3ccc(OC)cc3\\C(=N\\OC[C@@H](O)COCc4occc4)\\[C@@H]2O', 'inactive', '']
+exception: ['CHEMBL1320251', 'CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1257124', 'CCCCCCCCCCCCCCCCCCOC[C@@H](COP(=O)([O-])OCC[N+](C)(C)C)OC', 'inactive', '']
+exception: ['CHEMBL1596987', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'inactive', '']
+exception: ['CHEMBL1357184', 'COC(=O)C\\C=C/[C@@H](C)[C@H](NS(=O)(=O)c1ccc(C)cc1)\\C=N/OC[C@@H](O)COCc2occc2', 'inactive', '']
+exception: ['CHEMBL1592852', 'CC(C)(C)N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1742328', 'COc1ccc(OCC(O)COc2ccc(cc2)C(=O)O)cc1', 'inactive', '']
+exception: ['CHEMBL1551584', 'CC(C)(C)N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1320791', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@@H]4[C@@H]3C(=O)N(C4=O)c5ccc(F)cc5F', 'inactive', '']
+exception: ['CHEMBL1371950', 'CN1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O', 'inactive', '']
+exception: ['CHEMBL1606038', 'CCc1cc2CN(CC\\C(=N\\OC[C@@H](O)COCc3occc3)\\C)CCc2nc1CC', 'inactive', '']
+exception: ['CHEMBL1369347', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(C4=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1395523', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C4=O)c5cccc(Oc6ccccc6)c5', 'inactive', '']
+exception: ['CHEMBL1561579', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCc3nc(c4ccccc4)c(cc3C2)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1741549', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1594107', 'CCCCC[C@H](O)\\C=C/[C@@H]1[C@H](O)C[C@H](O)[C@H]1C\\C=C/CCCC(=O)O.COC(N)(CO)CO', 'inactive', '']
+exception: ['CHEMBL1405913', 'CC[C@H](N1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1337978', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1487948', 'CCCCCCCCCCCCCCC[C@H](O)[C@H](N)CO', 'inactive', '']
+exception: ['CHEMBL1563396', 'COc1ccc(O[C@H]2C=C[C@H](O[C@H]2COC(=O)CC\\C(=N/OC[C@@H](O)COCc3occc3)\\C)c4ccccc4)cc1', 'inactive', '']
+exception: ['CHEMBL1473408', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1612908', 'CCCCCCCCCCCCCCCCCCNC(=O)OC[C@@H](COP(=O)([O-])OCC[n+]1ccsc1)OC', 'inactive', '']
+exception: ['CHEMBL1606380', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'inactive', '']
+exception: ['CHEMBL74', '[Na+].[Na+].OC(COc1cccc2OC(=CC(=O)c12)C(=O)[O-])COc3cccc4OC(=CC(=O)c34)C(=O)[O-]', 'inactive', '']
+exception: ['CHEMBL1327505', 'CC(C)[C@@H](OCc1ccccc1)[C@H](C)\\C=N/OC[C@@H](O)COCc2occc2', 'inactive', '']
+exception: ['CHEMBL1437509', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C4=O)c5cccc(Oc6ccccc6)c5', 'inactive', '']
+exception: ['CHEMBL1368111', 'C[C@H](N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1529384', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCCc3nc(C)c(C)cc23', 'inactive', '']
+exception: ['CHEMBL1455203', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCCCc3nc(C)c(C)cc23', 'inactive', '']
+exception: ['CHEMBL1741536', 'CC(=O)OC[C@@H]1O[C@H](C\\C=N/OC[C@@H](O)COCc2occc2)C=C[C@@H]1OC(=O)C', 'inactive', '']
+exception: ['CHEMBL1435288', 'COC(=O)[C@@H]1CC[C@H](C)[C@H](N1C(=O)c2ccc(\\C=N/OC[C@@H](O)COCc3occc3)cc2)c4ccc(C)cc4', 'inactive', '']
+exception: ['CHEMBL1741608', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1525349', 'CC(=NOC[C@@H](O)COCc1occc1)C', 'inactive', '']
+exception: ['CHEMBL1372088', 'CO[C@H](CO)COc1ccc(OC)cc1', 'inactive', '']
+exception: ['CHEMBL1356962', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@@H]4[C@@H]3C(=O)N(C4=O)c5ccc(F)cc5F', 'inactive', '']
+exception: ['CHEMBL1493851', 'C\\C(=N\\OC[C@@H](O)COCc1occc1)\\CCC(=O)OC[C@@H]2O[C@@H](C=C[C@@H]2Oc3ccc(C)cc3)C#Cc4ccccc4', 'inactive', '']
+exception: ['CHEMBL1438689', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(Cc6cc7OCOc7cc6Cl)C4=O', 'inactive', '']
+exception: ['CHEMBL1357193', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'inactive', '']
+exception: ['CHEMBL1476892', 'C[C@H](N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1435837', 'CO[C@H](\\C=N/OC[C@@H](O)COCc1occc1)[C@H](C)\\C=C/CC(=O)OC', 'inactive', '']
+non_reactant: 221
+reactant: 12831
+77.51539240900944 27.149321266968325 22.484607590990564 72.85067873303167
+
+
+bioactivityCYP2C8_inactive_v_active.csvstart...
+Cytochrome P450 mechanistic inhibitor: PMID 15304522
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 15304522
+Cytochrome P450 mechanistic inhibitor: PMID 15304522
+Cytochrome P450 mechanistic inhibitor, no time dependant inhibition observed in HLM: PMID 15304522
+Inhibitor
+Cytochrome P450 mechanistic inhibitor, no time dependant inhibition observed in HLM: PMID 15304522
+Inhibitor
+Inhibitor
+Inhibitor
+non_reactant: 33
+reactant: 10
+60.0 36.36363636363637 40.0 63.63636363636363
+
+
+bioactivityCYP2B6_inactive_v_active.csvstart...
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 12023523
+Cytochrome P450 mechanistic inhibitor PMID 9665710
+Cytochrome P450 mechanistic inhibitor PMID 9665710
+Cytochrome P450 mechanistic inhibitor: PMID 10901700
+Cytochrome P450 mechanistic inhibitor: PMID 15608076
+Cytochrome P450 mechanistic inhibitor PMID 9665710
+Cytochrome P450 mechanistic inhibitor: PMID 9172960
+Cytochrome P450 mechanistic inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 12485952
+Cytochrome P450 mechanistic inhibitor PMID 9665710
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 12019199
+Cytochrome P450 mechanistic inhibitor: PMID 12485950
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 15652242
+Inhibitor
+non_reactant: 53
+reactant: 13
+69.23076923076923 52.83018867924528 30.769230769230774 47.16981132075472
+
+
+bioactivityCYP2A6_inactive_v_active.csvstart...
+Cytochrome P450 mechanistic inhibitor: PMID 9695717
+Cytochrome P450 mechanistic inhibitor: PMID 9394031
+Cytochrome P450 mechanistic inhibitor: PMID 9665710
+Cytochrome P450 mechanistic inhibitor: PMID 9660853
+Cytochrome P450 mechanistic inhibitor: PMID 9665710
+Cytochrome P450 mechanistic inhibitor: PMID 9665710
+Cytochrome P450 mechanistic inhibitor: PMID 9665710
+non_reactant: 19
+reactant: 7
+57.14285714285714 73.68421052631578 42.85714285714286 26.31578947368422
+
+
+bioactivityCYP2C19_inactive_v_active.csvstart...
+Cytochrome P450 mechanistic inhibitor: PMID 8806399
+Cytochrome P450 mechanistic inhibitor: PMID 11580286
+Cytochrome P450 mechanistic inhibitor: PMID 14563790
+exception: ['CHEMBL1563396', 'COc1ccc(O[C@H]2C=C[C@H](O[C@H]2COC(=O)CC\\C(=N/OC[C@@H](O)COCc3occc3)\\C)c4ccccc4)cc1', 'Active', '']
+Inhibitor
+exception: ['CHEMBL1326815', 'COc1cccc(c1)[C@@H]2Oc3ccc(OC)cc3\\C(=N\\OC[C@@H](O)COCc4occc4)\\[C@@H]2O', 'Active', '']
+Inhibitor
+exception: ['CHEMBL146095', 'OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23', 'Active', '22931300']
+exception: ['CHEMBL1514070', 'OC[C@@H](O)COc1cccc2ccccc12', 'Active', '']
+exception: ['CHEMBL1723345', 'NC(=O)OC[C@H](O)COc1ccc(Cl)cc1', 'inactive', '']
+exception: ['CHEMBL1741536', 'CC(=O)OC[C@@H]1O[C@H](C\\C=N/OC[C@@H](O)COCc2occc2)C=C[C@@H]1OC(=O)C', 'inactive', '']
+exception: ['CHEMBL1368111', 'C[C@H](N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1395523', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C4=O)c5cccc(Oc6ccccc6)c5', 'inactive', '']
+exception: ['CHEMBL1438689', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(Cc6cc7OCOc7cc6Cl)C4=O', 'inactive', '']
+exception: ['CHEMBL1529384', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCCc3nc(C)c(C)cc23', 'inactive', '']
+exception: ['CHEMBL1473408', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1487948', 'CCCCCCCCCCCCCCC[C@H](O)[C@H](N)CO', 'inactive', '']
+exception: ['CHEMBL1612908', 'CCCCCCCCCCCCCCCCCCNC(=O)OC[C@@H](COP(=O)([O-])OCC[n+]1ccsc1)OC', 'inactive', '']
+exception: ['CHEMBL1551571', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'inactive', '']
+exception: ['CHEMBL1741608', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1369347', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(C4=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1317647', 'CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1455203', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCCCc3nc(C)c(C)cc23', 'inactive', '']
+exception: ['CHEMBL448741', 'CCCCCCCCCCCCCCC[C@@H](O)[C@@H](N)CO', 'inactive', '']
+exception: ['CHEMBL1320251', 'CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1356962', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@@H]4[C@@H]3C(=O)N(C4=O)c5ccc(F)cc5F', 'Not Active', '']
+exception: ['CHEMBL1320791', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@@H]4[C@@H]3C(=O)N(C4=O)c5ccc(F)cc5F', 'Not Active', '']
+exception: ['CHEMBL1594107', 'CCCCC[C@H](O)\\C=C/[C@@H]1[C@H](O)C[C@H](O)[C@H]1C\\C=C/CCCC(=O)O.COC(N)(CO)CO', 'inactive', '']
+exception: ['CHEMBL1593190', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'inactive', '']
+exception: ['CHEMBL1525349', 'CC(=NOC[C@@H](O)COCc1occc1)C', 'inactive', '']
+exception: ['CHEMBL1741472', 'Cc1ccccc1OC[C@H](O)CO', 'inactive', '']
+exception: ['CHEMBL1437509', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C4=O)c5cccc(Oc6ccccc6)c5', 'inactive', '']
+exception: ['CHEMBL1551584', 'CC(C)(C)N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1476892', 'C[C@H](N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'Not Active', '']
+exception: ['CHEMBL1257124', 'CCCCCCCCCCCCCCCCCCOC[C@@H](COP(=O)([O-])OCC[N+](C)(C)C)OC', 'inactive', '']
+exception: ['CHEMBL1405913', 'CC[C@H](N1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1493851', 'C\\C(=N\\OC[C@@H](O)COCc1occc1)\\CCC(=O)OC[C@@H]2O[C@@H](C=C[C@@H]2Oc3ccc(C)cc3)C#Cc4ccccc4', 'inactive', '']
+exception: ['CHEMBL1741549', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1357184', 'COC(=O)C\\C=C/[C@@H](C)[C@H](NS(=O)(=O)c1ccc(C)cc1)\\C=N/OC[C@@H](O)COCc2occc2', 'inactive', '']
+exception: ['CHEMBL1413388', 'COc1ccccc1OC[C@H](O)CO', 'inactive', '']
+exception: ['CHEMBL1551418', 'COc1ccccc1OC[C@H](O)COC(=O)N', 'inactive', '']
+exception: ['CHEMBL1371950', 'CN1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O', 'inactive', '']
+exception: ['CHEMBL1337978', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'Not Active', '']
+exception: ['CHEMBL1742328', 'COc1ccc(OCC(O)COc2ccc(cc2)C(=O)O)cc1', 'inactive', '']
+exception: ['CHEMBL1606038', 'CCc1cc2CN(CC\\C(=N\\OC[C@@H](O)COCc3occc3)\\C)CCc2nc1CC', 'inactive', '']
+exception: ['CHEMBL1372088', 'CO[C@H](CO)COc1ccc(OC)cc1', 'inactive', '']
+exception: ['CHEMBL1596987', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'inactive', '']
+exception: ['CHEMBL1515899', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'inactive', '']
+exception: ['CHEMBL1592852', 'CC(C)(C)N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1435837', 'CO[C@H](\\C=N/OC[C@@H](O)COCc1occc1)[C@H](C)\\C=C/CC(=O)OC', 'inactive', '']
+exception: ['CHEMBL1561579', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCc3nc(c4ccccc4)c(cc3C2)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1357193', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'inactive', '']
+exception: ['CHEMBL74', '[Na+].[Na+].OC(COc1cccc2OC(=CC(=O)c12)C(=O)[O-])COc3cccc4OC(=CC(=O)c34)C(=O)[O-]', 'inactive', '']
+non_reactant: 388
+reactant: 13083
+73.72162348085301 50.25773195876289 26.27837651914699 49.74226804123711
+
+
+bioactivityCYP2D6_inactive_v_active.csvstart...
+Cytochrome P450 mechanistic inhibitor: PMID 11854155
+Cytochrome P450 mechanistic inhibitor: PMID 11353755
+Inhibitor
+exception: ['CHEMBL428880', 'OC(COc1cccc2OC(=CC(=O)c12)C(=O)O)COc3cccc4OC(=CC(=O)c34)C(=O)O', 'Active', '22931300']
+Inhibitor
+Inhibitor
+Cytochrome P450 mechanistic inhibitor
+Inhibitor
+exception: ['CHEMBL980', 'COc1ccccc1OCC(O)CO', 'Active', '22931300']
+Cytochrome P450 mechanistic inhibitor: PMID 8531125
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 14967005
+Inhibitor
+exception: ['CHEMBL448741', 'CCCCCCCCCCCCCCC[C@@H](O)[C@@H](N)CO', 'Active', '']
+exception: ['CHEMBL3086675', 'OC[C@@H](O)COc1ccc2COc3cc(Nc4ccc(F)cc4F)ccc3C(=O)c2c1', 'Active', '24131218']
+exception: ['CHEMBL146095', 'OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23', 'Active', '22931300']
+exception: ['CHEMBL1357193', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'inactive', '']
+exception: ['CHEMBL1493851', 'C\\C(=N\\OC[C@@H](O)COCc1occc1)\\CCC(=O)OC[C@@H]2O[C@@H](C=C[C@@H]2Oc3ccc(C)cc3)C#Cc4ccccc4', 'inactive', '']
+exception: ['CHEMBL1368111', 'C[C@H](N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1593190', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'inactive', '']
+exception: ['CHEMBL1551584', 'CC(C)(C)N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1741536', 'CC(=O)OC[C@@H]1O[C@H](C\\C=N/OC[C@@H](O)COCc2occc2)C=C[C@@H]1OC(=O)C', 'inactive', '']
+exception: ['CHEMBL1437509', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C4=O)c5cccc(Oc6ccccc6)c5', 'inactive', '']
+exception: ['CHEMBL1395523', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C4=O)c5cccc(Oc6ccccc6)c5', 'inactive', '']
+exception: ['CHEMBL1337978', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1320791', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@@H]4[C@@H]3C(=O)N(C4=O)c5ccc(F)cc5F', 'inactive', '']
+exception: ['CHEMBL1515899', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'inactive', '']
+exception: ['CHEMBL1435837', 'CO[C@H](\\C=N/OC[C@@H](O)COCc1occc1)[C@H](C)\\C=C/CC(=O)OC', 'Not Active', '']
+exception: ['CHEMBL1741549', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1563396', 'COc1ccc(O[C@H]2C=C[C@H](O[C@H]2COC(=O)CC\\C(=N/OC[C@@H](O)COCc3occc3)\\C)c4ccccc4)cc1', 'inactive', '']
+exception: ['CHEMBL1405913', 'CC[C@H](N1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1473408', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1596987', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'inactive', '']
+exception: ['CHEMBL1326815', 'COc1cccc(c1)[C@@H]2Oc3ccc(OC)cc3\\C(=N\\OC[C@@H](O)COCc4occc4)\\[C@@H]2O', 'inactive', '']
+exception: ['CHEMBL1561579', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCc3nc(c4ccccc4)c(cc3C2)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1551571', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'inactive', '']
+exception: ['CHEMBL1606380', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'inactive', '']
+exception: ['CHEMBL1369347', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(C4=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1372088', 'CO[C@H](CO)COc1ccc(OC)cc1', 'inactive', '']
+exception: ['CHEMBL1435288', 'COC(=O)[C@@H]1CC[C@H](C)[C@H](N1C(=O)c2ccc(\\C=N/OC[C@@H](O)COCc3occc3)cc2)c4ccc(C)cc4', 'inactive', '']
+exception: ['CHEMBL1257124', 'CCCCCCCCCCCCCCCCCCOC[C@@H](COP(=O)([O-])OCC[N+](C)(C)C)OC', 'inactive', '']
+exception: ['CHEMBL1551418', 'COc1ccccc1OC[C@H](O)COC(=O)N', 'inactive', '']
+exception: ['CHEMBL1594107', 'CCCCC[C@H](O)\\C=C/[C@@H]1[C@H](O)C[C@H](O)[C@H]1C\\C=C/CCCC(=O)O.COC(N)(CO)CO', 'inactive', '']
+exception: ['CHEMBL1723345', 'NC(=O)OC[C@H](O)COc1ccc(Cl)cc1', 'inactive', '']
+exception: ['CHEMBL1371950', 'CN1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O', 'inactive', '']
+exception: ['CHEMBL1320251', 'CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1741472', 'Cc1ccccc1OC[C@H](O)CO', 'inactive', '']
+exception: ['CHEMBL1476892', 'C[C@H](N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1514070', 'OC[C@@H](O)COc1cccc2ccccc12', 'inactive', '']
+exception: ['CHEMBL1741608', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL74', '[Na+].[Na+].OC(COc1cccc2OC(=CC(=O)c12)C(=O)[O-])COc3cccc4OC(=CC(=O)c34)C(=O)[O-]', 'inactive', '']
+exception: ['CHEMBL1327505', 'CC(C)[C@@H](OCc1ccccc1)[C@H](C)\\C=N/OC[C@@H](O)COCc2occc2', 'inactive', '']
+exception: ['CHEMBL1317647', 'CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1612908', 'CCCCCCCCCCCCCCCCCCNC(=O)OC[C@@H](COP(=O)([O-])OCC[n+]1ccsc1)OC', 'inactive', '']
+exception: ['CHEMBL1592852', 'CC(C)(C)N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1742328', 'COc1ccc(OCC(O)COc2ccc(cc2)C(=O)O)cc1', 'inactive', '']
+exception: ['CHEMBL1438689', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(Cc6cc7OCOc7cc6Cl)C4=O', 'inactive', '']
+exception: ['CHEMBL1413388', 'COc1ccccc1OC[C@H](O)CO', 'inactive', '']
+exception: ['CHEMBL1356962', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@@H]4[C@@H]3C(=O)N(C4=O)c5ccc(F)cc5F', 'inactive', '']
+non_reactant: 485
+reactant: 13490
+78.39881393624908 35.4639175257732 21.601186063750916 64.5360824742268
+
+
+bioactivityCYP2C9_inactive_v_active.csvstart...
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 10901701
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 9107543
+Cytochrome P450 mechanistic inhibitor: PMID 14570769
+exception: ['CHEMBL1201117', 'COc1ccccc1OCC(O)COC(=O)N', 'Active', '22931300']
+Cytochrome P450 mechanistic inhibitor: PMID 15155549
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 9023313
+exception: ['CHEMBL1563396', 'COc1ccc(O[C@H]2C=C[C@H](O[C@H]2COC(=O)CC\\C(=N/OC[C@@H](O)COCc3occc3)\\C)c4ccccc4)cc1', 'Active', '']
+exception: ['CHEMBL1435288', 'COC(=O)[C@@H]1CC[C@H](C)[C@H](N1C(=O)c2ccc(\\C=N/OC[C@@H](O)COCc3occc3)cc2)c4ccc(C)cc4', 'Active', '']
+Inhibitor
+exception: ['CHEMBL146095', 'OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23', 'Active', '22931300']
+Inhibitor
+exception: ['CHEMBL1320791', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@@H]4[C@@H]3C(=O)N(C4=O)c5ccc(F)cc5F', 'inactive', '']
+exception: ['CHEMBL1515899', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'inactive', '']
+exception: ['CHEMBL1741608', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1723345', 'NC(=O)OC[C@H](O)COc1ccc(Cl)cc1', 'inactive', '']
+exception: ['CHEMBL1551418', 'COc1ccccc1OC[C@H](O)COC(=O)N', 'inactive', '']
+exception: ['CHEMBL1327505', 'CC(C)[C@@H](OCc1ccccc1)[C@H](C)\\C=N/OC[C@@H](O)COCc2occc2', 'inactive', '']
+exception: ['CHEMBL182', 'Nc1nc(O)c2ncn(COC(CO)CO)c2n1', 'inactive', '']
+exception: ['CHEMBL1437509', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C4=O)c5cccc(Oc6ccccc6)c5', 'inactive', '']
+exception: ['CHEMBL1371950', 'CN1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O', 'inactive', '']
+exception: ['CHEMBL1514070', 'OC[C@@H](O)COc1cccc2ccccc12', 'inactive', '']
+exception: ['CHEMBL1596987', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'inactive', '']
+exception: ['CHEMBL1435837', 'CO[C@H](\\C=N/OC[C@@H](O)COCc1occc1)[C@H](C)\\C=C/CC(=O)OC', 'inactive', '']
+exception: ['CHEMBL1372088', 'CO[C@H](CO)COc1ccc(OC)cc1', 'Not Active', '']
+exception: ['CHEMBL1476892', 'C[C@H](N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1337978', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1368111', 'C[C@H](N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL74', '[Na+].[Na+].OC(COc1cccc2OC(=CC(=O)c12)C(=O)[O-])COc3cccc4OC(=CC(=O)c34)C(=O)[O-]', 'inactive', '']
+exception: ['CHEMBL1473408', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(C[C@@H]5CCCO5)C4=O', 'inactive', '']
+exception: ['CHEMBL1551571', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccc6OCOc6c5)C4=O', 'inactive', '']
+exception: ['CHEMBL1741472', 'Cc1ccccc1OC[C@H](O)CO', 'inactive', '']
+exception: ['CHEMBL1405913', 'CC[C@H](N1C(=O)N2CC[C@@H]3[C@H]([C@H](O)[C@H]4O[C@@H]4/C/3=N/OC[C@@H](O)COCc5occc5)N2C1=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1551584', 'CC(C)(C)N1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1369347', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(C4=O)c6ccccc6', 'inactive', '']
+exception: ['CHEMBL1606038', 'CCc1cc2CN(CC\\C(=N\\OC[C@@H](O)COCc3occc3)\\C)CCc2nc1CC', 'inactive', '']
+exception: ['CHEMBL1413388', 'COc1ccccc1OC[C@H](O)CO', 'inactive', '']
+exception: ['CHEMBL1487948', 'CCCCCCCCCCCCCCC[C@H](O)[C@H](N)CO', 'inactive', '']
+exception: ['CHEMBL1741536', 'CC(=O)OC[C@@H]1O[C@H](C\\C=N/OC[C@@H](O)COCc2occc2)C=C[C@@H]1OC(=O)C', 'inactive', '']
+exception: ['CHEMBL1438689', 'O[C@@H](COCc1occc1)CO\\N=C\\2/[C@@H]3CCN4N([C@H]3[C@H](O)[C@H]5O[C@H]25)C(=O)N(Cc6cc7OCOc7cc6Cl)C4=O', 'inactive', '']
+exception: ['CHEMBL1742328', 'COc1ccc(OCC(O)COc2ccc(cc2)C(=O)O)cc1', 'inactive', '']
+exception: ['CHEMBL1317647', 'CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1525349', 'CC(=NOC[C@@H](O)COCc1occc1)C', 'inactive', '']
+exception: ['CHEMBL1257124', 'CCCCCCCCCCCCCCCCCCOC[C@@H](COP(=O)([O-])OCC[N+](C)(C)C)OC', 'inactive', '']
+exception: ['CHEMBL448741', 'CCCCCCCCCCCCCCC[C@@H](O)[C@@H](N)CO', 'inactive', '']
+exception: ['CHEMBL1320251', 'CCN1C(=O)[C@H]2CC[C@@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1356962', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@@H]4[C@@H]3C(=O)N(C4=O)c5ccc(F)cc5F', 'inactive', '']
+exception: ['CHEMBL1357184', 'COC(=O)C\\C=C/[C@@H](C)[C@H](NS(=O)(=O)c1ccc(C)cc1)\\C=N/OC[C@@H](O)COCc2occc2', 'inactive', '']
+exception: ['CHEMBL1561579', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCc3nc(c4ccccc4)c(cc3C2)c5ccccc5', 'inactive', '']
+exception: ['CHEMBL1606380', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'inactive', '']
+exception: ['CHEMBL1529384', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCCc3nc(C)c(C)cc23', 'inactive', '']
+exception: ['CHEMBL1592852', 'CC(C)(C)N1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1594107', 'CCCCC[C@H](O)\\C=C/[C@@H]1[C@H](O)C[C@H](O)[C@H]1C\\C=C/CCCC(=O)O.COC(N)(CO)CO', 'inactive', '']
+exception: ['CHEMBL1741549', 'CCOC(=O)CCN1C(=O)[C@H]2CC[C@H]3[C@H]([C@H](O)[C@H](O)C/C/3=N/OC[C@@H](O)COCc4occc4)[C@@H]2C1=O', 'inactive', '']
+exception: ['CHEMBL1593190', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C5CCCCC5)C4=O', 'inactive', '']
+exception: ['CHEMBL1395523', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@H]2CC[C@H]4[C@H]3C(=O)N(C4=O)c5cccc(Oc6ccccc6)c5', 'inactive', '']
+exception: ['CHEMBL1455203', 'C\\C(=N/OC[C@@H](O)COCc1occc1)\\CCN2CCCCc3nc(C)c(C)cc23', 'inactive', '']
+exception: ['CHEMBL1357193', 'O[C@@H](COCc1occc1)CO\\N=C/2\\C[C@@H](O)[C@@H](O)[C@H]3[C@@H]2CC[C@H]4[C@H]3C(=O)N(Cc5ccccc5)C4=O', 'inactive', '']
+non_reactant: 503
+reactant: 12504
+79.90243122200896 25.04970178926441 20.097568777991043 74.95029821073558
+
+
+bioactivityCYP2E1_inactive_v_active.csvstart...
+Cytochrome P450 mechanistic inhibitor: PMID 9695717
+Cytochrome P450 mechanistic inhibitor: PMID 8902272
+Inhibitor
+Cytochrome P450 mechanistic inhibitor: PMID 10860553
+Cytochrome P450 mechanistic inhibitor: PMID 7746093
+Inhibitor
+Inhibitor
+non_reactant: 7
+reactant: 7
+71.42857142857143 71.42857142857143 28.57142857142857 28.57142857142857
