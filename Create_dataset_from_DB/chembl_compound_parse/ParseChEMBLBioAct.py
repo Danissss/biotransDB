@@ -17,11 +17,18 @@ def investigate_duplicate_ChEMBLID():
 def ChEMBL_Data_cleanup(FileName):
 
 	# create new directory:
+	transporter_name = FileName.split('.')[0]
 	cwd = os.getcwd()
-	newdirectory = cwd+"/"+FileName
-	os.makedirs(newdirectory)
+	FileName = cwd+"/"+FileName
+
+	newdirectory = cwd+"/"+transporter_name
+	try:
+		os.makedirs(newdirectory)
+	except:
+		print("directory exist...")
 	# os.chdir("/Users/xuan/Desktop/biotransDB/Create_dataset_from_DB/chembl_compound_parse/new_dir")
 	os.chdir(newdirectory)
+	
 	# now working on new directory
 
 
@@ -118,24 +125,24 @@ def ChEMBL_Data_cleanup(FileName):
 	substrate_v_inhibitor = substrate + inhibitor
 	active_v_inactive = Active + inactive
 
-	with open(FileName+"_substrate_v_inhibitor.csv", "w",newline='') as writeFile_1:
+	with open(newdirectory+"/_substrate_v_inhibitor.csv", "w",newline='') as writeFile_1:
 		writer_csv_1 = csv.writer(writeFile_1, quoting=csv.QUOTE_ALL)
 		for i in substrate_v_inhibitor:
 			writer_csv_1.writerow(i)
 
 
-	with open(FileName+"_inactive_v_active.csv", "w",newline='') as writeFile_2:
+	with open(newdirectory+"/_inactive_v_active.csv", "w",newline='') as writeFile_2:
 		writer_csv_2 = csv.writer(writeFile_2, quoting=csv.QUOTE_ALL)
 		for i in active_v_inactive:
 			writer_csv_2.writerow(i)
 
 
-	with open(FileName+"_duplicated.csv", "w",newline='') as writeFile_3:
+	with open(newdirectory+"/_duplicated.csv", "w",newline='') as writeFile_3:
 		writer_csv_3 = csv.writer(writeFile_3, quoting=csv.QUOTE_ALL)
 		for i in duplicated:
 			writer_csv_3.writerow(i)
 
-	with open(FileName+"_else_type.csv", "w",newline='') as writeFile_5:
+	with open(newdirectory+"/_else_type.csv", "w",newline='') as writeFile_5:
 		writer_csv_5 = csv.writer(writeFile_5, quoting=csv.QUOTE_ALL)
 		for i in els_:
 			writer_csv_5.writerow(i)
@@ -145,7 +152,7 @@ def ChEMBL_Data_cleanup(FileName):
 	# this is for investigate the duplicate compound in ChEMBL database 
 	new_chembl_file = open(FileName,"r")
 	new_cheml_csv_reader = csv.reader(new_chembl_file,delimiter=',')
-	duplicated_id_file =  open(FileName+"_duplicated_id_for_investigate.csv", "w",newline='')
+	duplicated_id_file =  open(newdirectory+"/_duplicated_id_for_investigate.csv", "w",newline='')
 	writer_csv_4 = csv.writer(duplicated_id_file, quoting=csv.QUOTE_ALL)
 
 	for duplicate_compound in duplicated:
