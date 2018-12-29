@@ -44,8 +44,9 @@ def combine_via_chemsimilarity(cypfile,cypreact):
 	print("Start: "+ cypfile)
 	cwd = os.getcwd()
 
+	print(cwd+"/"+cypfile)
 	
-	
+	sys.exit(0)
 	
 
 
@@ -71,9 +72,9 @@ def combine_via_chemsimilarity(cypfile,cypreact):
 	# currently only support Drugbank data and ChEMBL data
 	# later could add self-annotating data 
 
-	drugbank_csv = open(cypfile, newline='')
+	drugbank_csv = open(cwd+"/"+cypfile, newline='')
 	drugbank_csvreader = csv.reader(drugbank_csv, delimiter=',')
-	ChEMBL_csv = open(cypreact, newline='')
+	ChEMBL_csv = open(cwd+"/"+cypreact, newline='')
 	ChEMBL_csvreader = csv.reader(ChEMBL_csv, delimiter=',')
 
 	DRUGBANK = []

@@ -37,13 +37,14 @@ def check(file_name,cyp):
 	check_file = open(file_name, "r");
 	check_file_reader = csv.reader(check_file,quoting=csv.QUOTE_ALL)
 
-	total_tested = 0;
-	original_R   = 0;
-	predicted_correct = 0;
-	non_reactant_predicted_correct = 0;
-	predicted_wrong   = 0;
-	reactant = 0;
-	non_reactant = 0;
+	total_tested = 0
+	original_R   = 0
+	predicted_correct = 0
+	non_reactant_predicted_correct = 0
+	predicted_wrong   = 0
+	exception = 0
+	reactant = 0
+	non_reactant = 0
 	for row in check_file_reader:
 		SMILES = row[1]
 		check_smiles = "SMILES="+ SMILES
@@ -62,7 +63,7 @@ def check(file_name,cyp):
 			result = result.replace(" ","")
 			result = result.replace("\n","")
 		except:
-			result = "N"
+			result = "exception"
 			print("exception: " + str(row))
 		actual = row[2]
 		
@@ -71,6 +72,8 @@ def check(file_name,cyp):
 
 			if result == "R":
 				predicted_correct = predicted_correct + 1  #True positive
+			elif result == "exception":
+				exception = exception+1
 			else:
 				predicted_wrong   = predicted_wrong + 1    #False positive
 
@@ -78,6 +81,8 @@ def check(file_name,cyp):
 		elif "inactive" in actual.lower() or "not active" in actual.lower():
 			if result == "N":
 				non_reactant_predicted_correct = non_reactant_predicted_correct + 1    # True negative
+			elif result == "exception":
+				exception = exception + 1
 			else:
 				non_reactant_predicted_wrong   = predicted_wrong + 1				   # False negative
 			non_reactant = non_reactant + 1
@@ -89,6 +94,7 @@ def check(file_name,cyp):
 	non_reactant_accuracy = (non_reactant_predicted_correct / non_reactant) *100
 	rectant_inaccuracy = 100 - reactant_accuracy
 	non_reactant_inaccuracy = 100 - non_reactant_accuracy
+	
 	print("non_reactant: "+str(non_reactant))
 	print("reactant: "+str(reactant))
 	print(reactant_accuracy,non_reactant_accuracy,rectant_inaccuracy,non_reactant_inaccuracy)
@@ -177,7 +183,8 @@ def main():
 				# 77.51539240900944 27.149321266968325 22.484607590990564 72.85067873303167 (for 1A2; Date: 2018-11-28)
 				
 				# result = check(f,"1A2")
-				result = "DONE"
+				result = check(f,"1A2")
+				
 			elif "3A4" in f:
 				# non_reactant: 2910
 				# reactant: 12515
@@ -226,7 +233,7 @@ def main():
 				# 71.42857142857143 71.42857142857143 28.57142857142857 28.57142857142857
 
 				# result = check(f,"2E1")
-				result = "DONE"
+				result = check(f,"2E1")
 			else:
 				print("unknown: "+f)
 

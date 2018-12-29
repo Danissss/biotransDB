@@ -28,18 +28,20 @@ current_list = [
 	"Solute carrier organic anion transporter family member 1B1 (OATP1B1)",
 	"Solute carrier organic anion transporter family member 1B3 (OATP1B3)",
 	"Solute carrier organic anion transporter family member 2A1",
-	"Solute carrier organic anion transporter family member 2B1",
+	"Solute carrier organic anion transporter family member 2B1"]
 
-	"Multidrug Resistance Transporter MDR 1",
-	"MDR1",
-
+MDR1 = ["Multidrug Resistance Transporter MDR 1",
+	"P-glycoprotein (P-gp)",
+	"P-glycoprotein 1",
+	"P-selectin/P-selectin glycoprotein ligand 1",
 	"P-glycoprotein 1 (Pgp/MDR1)"]
 
 
 
 def main():
-	for i in current_list:
+	for i in MDR1:
 		extract_compound(i)
+		# sys.exit(0)
 
 
 

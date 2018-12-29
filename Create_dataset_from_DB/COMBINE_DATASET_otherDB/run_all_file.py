@@ -32,15 +32,19 @@ def main():
 			for dirpath, dirnames, filenames in os.walk(current_dir):
 				for files in filenames:
 				# print(files)
-					if "substrate" in files:
+					if "final" in files:
 						chembl_file = current_dir +"/"+files
-					if "Extracted" in files:
+					else:
 						drugbank_file = current_dir +"/"+files
-
+			# print(chembl_file)
+			# print(drugbank_file)
+			# print("===============?===============")
 			combine_via_chemsimilarity(drugbank_file,chembl_file)
 
 			os.chdir(cwd)
 			print(os.getcwd())
+			print("==============================")
+			# sys.exit(0)
 
 
 if __name__ == '__main__':

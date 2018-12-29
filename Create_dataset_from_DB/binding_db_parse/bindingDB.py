@@ -53,6 +53,8 @@ def extract_compound(transporterName):
 			where target_name = '{0}';".format(transporterName)
 	result = c.execute(query).fetchall()
 
+	transporterName = transporterName.replace(" ","_")
+	transporterName = transporterName.replace("/","_")
 
 	csv_file = open("Extracted_"+transporterName+".csv", "w",newline='')
 	csv_writer = csv.writer(csv_file,quoting=csv.QUOTE_ALL)
@@ -73,17 +75,17 @@ def main():
 		create_db()
 
 
-	if sys.argv[1]:
-		arg_len = len(sys.argv)
-		last_arg = arg_len - 1
-		transporterName = ""
-		for arg in range(1,last_arg):
-			transporterName = transporterName + sys.argv[arg] + " "
-		transporterName = transporterName+sys.argv[last_arg]
-		extract_compound(transporterName)
+	# if sys.argv[1]:
+	# 	arg_len = len(sys.argv)
+	# 	last_arg = arg_len - 1
+	# 	transporterName = ""
+	# 	for arg in range(1,last_arg):
+	# 		transporterName = transporterName + sys.argv[arg] + " "
+	# 	transporterName = transporterName+sys.argv[last_arg]
+	# 	extract_compound(transporterName)
 
-	else:
-		print("Put the transporter name for extraction!")
+	# else:
+	# 	print("Put the transporter name for extraction!")
 
 	
 
