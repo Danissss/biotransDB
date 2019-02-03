@@ -119,6 +119,26 @@ for child in root.findall(ns+"drug"):
             # print(temp_tuple)
 
             cursor.execute("insert into drugbank_transport values (?,?,?,?)",temp_tuple)
+    
+    # create enzyme table 
+
+    for enzymes in child.findall(ns+"enzymes"):
+        #transportNum = transport.get("position").text
+        
+        for i in enzymes.findall(ns+"enzyme"):
+            transport_id = i.find(ns+"id").text
+            transport_name = i.find(ns+"name").text
+            #print(drug_ID,transport_id,transport_name)
+            transport_actions = ""
+            for j in i.findall(ns+"actions"):
+                for k in j.findall(ns+"action"):
+                    transport_actions += "|"+str(k.text)
+            transport_actions += "|"
+
+            temp_tuple = (drug_ID, transport_id,transport_name, transport_actions)
+            # print(temp_tuple)
+
+            cursor.execute("insert into drugbank_transport values (?,?,?,?)",temp_tuple)
 
     # UniprotKB_ID = None
     # for external_identifiers in child.findall(ns+"external-identifiers"):
