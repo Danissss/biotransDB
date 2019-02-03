@@ -37,7 +37,7 @@ def combined_new_dataset():
 	drugbank = "DRUGBANK"
 	CHEMBL   = "CHEMBL"
 	for i in file_name:
-		if drugbank in i.upper() || ChEMBL in i.upper()
+		if drugbank in i.upper() or ChEMBL in i.upper():
 			file_name.remove(i)
 		
 
@@ -106,19 +106,27 @@ def combined_new_dataset():
 
 # this function combine drugbank and chembl dataset
 def combine_via_chemsimilarity(drugbank_file,chembl_file):
+	# print(drugbank_file)
+	# print(chembl_file)
 
 	checked_file = open("final_.csv","w",newline='')
 	csv_writer_checked = csv.writer(checked_file,quoting=csv.QUOTE_ALL)
 	# this file is for keep track of duplicate compounds 
 	# if drugbank state the compound is inhibitor but chembl state substrate; then it needs to investigate
 	checked_file_2 = open("duplicates.csv","w",newline='')
-	csv_writer_checked_2 = csv.writer(checked_file,quoting=csv.QUOTE_ALL)
+	csv_writer_checked_2 = csv.writer(checked_file_2,quoting=csv.QUOTE_ALL)
 	# currently only support Drugbank data and ChEMBL data
 	# later could add self-annotating data 
-	drugbank_csv = open(drugbank_file, newline='')
-	drugbank_csvreader = csv.reader(drugbank_csv, delimiter=',')
-	ChEMBL_csv = open(chembl_file, newline='')
-	ChEMBL_csvreader = csv.reader(ChEMBL_csv, delimiter=',')
+	try:
+		drugbank_csv = open(drugbank_file, newline='')
+		drugbank_csvreader = csv.reader(drugbank_csv, delimiter=',')
+		ChEMBL_csv = open(chembl_file, newline='')
+		ChEMBL_csvreader = csv.reader(ChEMBL_csv, delimiter=',')
+
+	except:
+		print(os.getcwd())
+		sys.exit(0)
+
 
 	DRUGBANK = []
 	for row in drugbank_csvreader:
@@ -132,20 +140,24 @@ def combine_via_chemsimilarity(drugbank_file,chembl_file):
 	# later need automatically store into file 
 	for cl in CHEMBL:
 		for db in DRUGBANK:
-			mol_object_c = Chem.MolFromSmiles(cl[1])
-			mol_object_d = Chem.MolFromSmiles(db[1])
+			try:
+				mol_object_c = Chem.MolFromSmiles(cl[1])
+				mol_object_d = Chem.MolFromSmiles(db[1])
 
-			fps_c = FingerprintMols.FingerprintMol(mol_object_c)
-			fps_d = FingerprintMols.FingerprintMol(mol_object_d)
-			similiarty  = DataStructs.FingerprintSimilarity(fps_c,fps_d)
-			if similiarty == 1:
-				single_list = ["Duplicates"]
-				csv_writer_checked_2.writerow(single_list)
-				csv_writer_checked_2.writerow(cl)
-				csv_writer_checked_2.writerow(db)
-				# db_list = list(db)
-				# csv_writer.writerow(db_list)
-				DRUGBANK.remove(db)
+				fps_c = FingerprintMols.FingerprintMol(mol_object_c)
+				fps_d = FingerprintMols.FingerprintMol(mol_object_d)
+				similiarty  = DataStructs.FingerprintSimilarity(fps_c,fps_d)
+				if similiarty == 1:
+					single_list = ["Duplicates"]
+					csv_writer_checked_2.writerow(single_list)
+					csv_writer_checked_2.writerow(cl)
+					csv_writer_checked_2.writerow(db)
+					# db_list = list(db)
+					# csv_writer.writerow(db_list)
+					DRUGBANK.remove(db)
+			except:
+				print(cl[1])
+				print(db[1])
 
 	checked_file_2.close()
 	print("remaining compound from drugbank is: "+str(len(DRUGBANK)))
@@ -156,6 +168,7 @@ def combine_via_chemsimilarity(drugbank_file,chembl_file):
 
 
 	# csv_write_file.close()
+	checked_file.close()
 	checked_file.close()
 	print("similarity check done ...")
 	return None

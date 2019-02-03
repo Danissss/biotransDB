@@ -4,18 +4,23 @@ import sys
 
 
 # extract single transporter based on the transporter name
-def extract_all_transporter(transporter_name):
+def extract_all_transporter_from_drugbankid(transporter_id):
 	databaseFile = "test_drugbank.db"
 	conn = sqlite3.connect(databaseFile)
 	c = conn.cursor()
-	query = "with combined_table as (select drugbank_drug.drug_id, drugbank_drug.drug_name, drugbank_drug.drug_smiles, \
-			drugbank_drug.ChEMBL_ID,drugbank_transport.drug_transport_name, actions from drugbank_drug, drugbank_transport \
+	query = "with combined_table as (select drugbank_drug.drug_id, drugbank_drug.drug_name, drugbank_drug.drug_smiles,\
+			drugbank_drug.ChEMBL_ID,drugbank_transport.drug_transport_name,drugbank_transport.drug_transport_id, actions\
+                                 from drugbank_drug, drugbank_transport\
 			where drugbank_drug.drug_id = drugbank_transport.drug_id and drug_smiles is not null),\
-			extract_table as (select drug_name, drug_smiles, drug_transport_name, actions, ChEMBL_ID from combined_table where drug_id \
-			in (select drug_id from combined_table)) select * from extract_table where drug_transport_name = \
-			'{0}';".format(transporter_name)
+			extract_table as (select drug_name, drug_smiles, drug_transport_name,drug_transport_id, actions, ChEMBL_ID from combined_table where drug_id \
+			in (select drug_id from combined_table)) select * from extract_table where drug_transport_id =\
+			'{0}';".format(transporter_id)
+
 
 	result = c.execute(query).fetchall()
+	transporter_name = result[1][2]
+	transporter_name = transporter_name.replace(" ","_")
+	transporter_name = transporter_name.replace("/","_")
 	csv_file = open("Extracted_"+transporter_name+".csv", "w",newline='')
 	csv_writer = csv.writer(csv_file,quoting=csv.QUOTE_ALL)
 	for i in result:

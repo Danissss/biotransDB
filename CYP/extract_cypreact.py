@@ -6,7 +6,7 @@ import os
 def extract_cypreact_dataset():
 
 	file = open("CypReactDataset.tsv","r")
-	csv_file = open("Extracted_"+CypReactDataset+".csv", "w",newline='')
+	csv_file = open("Extracted_CypReactDataset.csv", "w",newline='')
 	csv_writer = csv.writer(csv_file,quoting=csv.QUOTE_ALL)
 
 	with file as cypreact:
@@ -28,7 +28,8 @@ def extract_cypreact_dataset():
 		CYP2D6 = header.index("2D6")
 		CYP2E1 = header.index("2|E1")
 		CYP3A4 = header.index("3A4")
-
+		temp_Tuple = ["Name", "SMILES","1A2","2A6","2B6","2C8","2C9","2C19","2D6","2E1","3A4"]
+		csv_writer.writerow(temp_Tuple)
 		for row in rd:
 			try:
 				tempTuple = (row[Ligand_Name], row[SMILES],row[CYP1A2],row[CYP2A6],row[CYP2B6],
