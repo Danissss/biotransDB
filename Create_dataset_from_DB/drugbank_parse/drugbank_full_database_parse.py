@@ -27,6 +27,8 @@ cursor.execute("create table drugbank_transport (drug_id char(20), drug_transpor
                actions char(20), foreign key (drug_id) references drugbank_drug(drug_id));")
 cursor.execute("create table drugbank_carrier (drug_id char(20), drug_carrier_id char(20), drug_carrier_name \
                 char(20), target_type char(20), foreign key (drug_id) references drugbank_drug(drug_id));")
+cursor.execute("create table drugbank_enzyme (drug_id char(20), drug_enzyme_id char(20), drug_enzyme_name \
+                char(20), target_type char(20), foreign key (drug_id) references drugbank_drug(drug_id));")
 
 
 
@@ -126,19 +128,19 @@ for child in root.findall(ns+"drug"):
         #transportNum = transport.get("position").text
         
         for i in enzymes.findall(ns+"enzyme"):
-            transport_id = i.find(ns+"id").text
-            transport_name = i.find(ns+"name").text
+            enzymes_id = i.find(ns+"id").text
+            enzymes_name = i.find(ns+"name").text
             #print(drug_ID,transport_id,transport_name)
-            transport_actions = ""
+            enzymes_actions = ""
             for j in i.findall(ns+"actions"):
                 for k in j.findall(ns+"action"):
-                    transport_actions += "|"+str(k.text)
-            transport_actions += "|"
+                    enzymes_actions += "|"+str(k.text)
+            enzymes_actions += "|"
 
-            temp_tuple = (drug_ID, transport_id,transport_name, transport_actions)
+            temp_tuple = (drug_ID,enzymes_id,enzymes_name,enzymes_actions)
             # print(temp_tuple)
 
-            cursor.execute("insert into drugbank_transport values (?,?,?,?)",temp_tuple)
+            cursor.execute("insert into drugbank_enzyme values (?,?,?,?)",temp_tuple)
 
     # UniprotKB_ID = None
     # for external_identifiers in child.findall(ns+"external-identifiers"):
